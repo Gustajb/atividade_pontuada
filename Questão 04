@@ -1,0 +1,45 @@
+programa {
+  funcao inicio() {
+    // Declarando variáveis.
+    real maca_kg, morango_kg, valor_maca, valor_morango, valor_maca1, valor_maca2, valor_morango1, valor_morango2, valor_total
+
+    // Solicitando dados.
+    escreva("Digite a quantidade de maçãs (kg): ")
+    leia(maca_kg)
+    escreva("Digite a quantidade de morangos (kg): ")
+    leia(morango_kg)
+
+    // Verificando (maçã)
+    valor_maca1 = maca_kg * 1.80
+    valor_maca2 = maca_kg * 1.50
+
+    
+    se (maca_kg < 5) {
+      valor_maca = valor_maca1
+    } senao {
+      valor_maca = valor_maca2 
+    }
+    // Verificando (morango)
+    valor_morango1 = morango_kg * 2.50
+    valor_morango2 = morango_kg * 2.20
+
+    se (morango_kg < 5) {
+      valor_morango = valor_morango1 
+    } senao {
+      valor_morango = valor_morango2
+    }
+    
+    // Valor total.
+    valor_total = valor_maca + valor_morango
+
+    se (valor_total > 25 ou maca_kg + morango_kg > 8) {
+      escreva("Valor final: " + valor_total * 0.90)
+    } senao {
+      escreva("Valor final:" + valor_total )
+    }
+    
+    }
+    
+
+  }
+}
