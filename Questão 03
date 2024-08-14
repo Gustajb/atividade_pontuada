@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+    // Declarando variáveis.
+    inteiro A, B, C
+
+    // Solicitando dados.
+    escreva("Digite o valor de A: ")
+    leia(A)
+    escreva("Digite o valor de B: ")
+    leia(B)
+
+    //Verificando.
+    se (A==B) {
+      escreva("C: " + (A+B))
+    } senao {
+      escreva("C: " + (A*B))
+    }
+    
+
+
+
+  }
+}
